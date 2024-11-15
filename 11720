@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Main{
+    
+    public static void main(String args[]){
+        Scanner s = new Scanner(System.in);
+        
+        int a = s.nextInt();
+        String b = s.next();
+        int sum = 0;
+        
+        for(int i = 0; i < a; i++)
+        {
+            sum += Character.getNumericValue(b.charAt(i));
+            //b.charAt(i) 이건 b문자열에 char 1개 가져오는거 갈호의 값에 따라 달라짐
+            //Character.getNumericValue(char)  이건 Character 클래스의 getNumericValue() 메서드로서 문자(char)를 숫자(int)로 변환함.
+        }
+        System.out.println(sum);
+        
+        
+        
+    }
+    
+}
